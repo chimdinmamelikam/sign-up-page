@@ -1,0 +1,164 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tint green page background */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #e6f4ea; /* soft tint green */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN CONTAINER (form + image) */
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    min-height: 600px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* LEFT SECTION (form) */
+.left-section {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 380px;
+}
+
+/* RIGHT SECTION (image) */
+.right-section {
+    
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6ee7b7, #6ee7b7);
+    
+}
+
+.right-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* FORM INPUTS */
+.input-group {
+    margin-bottom: 16px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 6px;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #10b981;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background-color: #059669;
+}
+
+.illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.illustration img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+
+
+/* Tablets (max-width: 900px) */
+@media (max-width: 900px) {
+    .container {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .right-section img {
+        max-width: 60%;
+    }
+}
+
+/* Mobile phones (max-width: 600px) */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .form-wrapper {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .right-section img {
+        max-width: 70%;
+        margin-top: 20px;
+    }
+
+    .signup-btn {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+
